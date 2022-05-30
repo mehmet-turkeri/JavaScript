@@ -11,13 +11,12 @@ const yas=25;
 console.log(yas);
 
 console.log(typeof yas);
+//! hata const değeri değiştirilemez
+// yas=27;
+// console.log(yas);
 
-//! hata const degeri degistirilemez
-//yas=27;
-//console.log(yas);
-
-//! const keyword une basklangic atamasi yapmak zorunlu
-//const pi;
+//! const keyword une başlangıç ataması yapmak zorunlu
+// const pi;
 
 const kelime="osman";
 console.log(kelime, typeof kelime);
@@ -41,7 +40,7 @@ console.log(name1, name2);
 //? CONST kullanamadığımız durumlarda (değişkenin değeri sürekli değişecekse) LET kullanmalıyız.
 
 let dil;
-dil="javascript";
+dil="Javascript";
 
 console.log(dil);
 
@@ -55,14 +54,15 @@ let sayi=5;
 let sonuc=sayi+6;
 console.log(sonuc);
 
-//! degisken taminlama keyword u kullanilmasa bile JS derleyicisi otomatik olarak tanimlar
-sayi1="6"
+
+//! değişken tanımlama keyword ü kullanılmasa bile JS derleyicisi otomatik olarak tanımlar
+sayi1="6";
 console.log(sayi1, typeof sayi1);
 
-//! Bir string ile number toplanirsa aslinda toplama yapmaz, concatination yapar.
+//! bir string ile number toplanırsa aslında toplama yapmaz, concatination yapar.
+
 sonuc1=sayi1+5;
 console.log(sonuc1);
-
 // ===================  VAR VERİ TİPİ ===============================
 //? VAR ile bir değişken tanımlandığında LET de olduğu gibi değeri sonradan değiştirilebilir.
 //! VAR değişkenleri tanımlandığı yere göre global olarak veya fonksiyon içerisinde erişilebilir.
@@ -73,21 +73,24 @@ console.log(sonuc1);
 var x=5;
 console.log(x);
 
-console.log("*********************************");
 
+console.log("**************************");
+
+
+// var keyword ü olunca blok içerisinde ve dışarısında erişebiliriz
 var ilk="Global";
 console.log(ilk);
 
 {
-    console.log(ilk);//Global
-    ilk="Suslu";
-    console.log(ilk);//Suslu
+ console.log(ilk);//global
+ ilk="Süslü";
+console.log(ilk);//süslü
 }
 
 // ilk="Bosluk";
-console.log(ilk);//Suslu
+console.log(ilk);//süslü
 
-console.log("*********************************");
+console.log("********************************");
 // en üste global olarak yazarsak let kullansakta başka scope lardan ulaşabiliriz
 let first="ahmet";
 
@@ -100,7 +103,7 @@ console.log(first);}
  console.log(first); //ipek
 }
 console.log(first); //ahmet
-{console.log(first)} //ahmet,
+{console.log(first)} //ahmet
 
 
    
